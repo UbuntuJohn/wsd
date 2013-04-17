@@ -3,19 +3,26 @@
 	<head>
 		<title>Linux Zone - A Fan Site for Linux Enthusiasts</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/gentium" type="text/css"/>
+		<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/comfortaa" type="text/css"/> 
+		<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/teleindicadores-1" type="text/css"/> 
+		 <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/khmerosclassic" type="text/css"/> 
 	</head>
 	<body>
+		<div id="wrapper">
 		<header>	
-			<img src="images/logo.png" alt="Linux Zone with Tux" title="Linux Zone"/>
-			<div id="slogan">Release the enthusiast within.</div>
+			<img src="images/logo2.png" alt="Linux Zone with Tux" title="Linux Zone"/>
 			<nav>
-				<ul>
+				<ul class='nav'>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
+					<li><a href="#">Contact</a></li>
 					<li><a href="register.html">Sign-up</a></li>
 				</ul>
 			</nav>
 		</header>
+		<div id="slogan">Release the enthusiast within.</div>
 		<aside>
 			<h3>Testimonials</h3>
 			<p>
@@ -24,7 +31,15 @@
 			any Linux Administrator position!" - A Loyal Premium Member
 			</em>
 			</p>
+			<ol id='gallery'>
+				<li><img src="images/arch.png" width="125" height="125" alt="ArchLinux Logo" title="ArchLinux" /></li>
+				<li><img src="images/ubuntu.png" width="125" height="125" alt="Ubuntu Logo" title="Ubuntu" /></li>
+				<li><img src="images/fedora.png" width="125" height="125" alt="Fedora Logo" title="Fedora" /></li>
+				<li><img src="images/mint.png" width="125" height="125" alt="Linux Mint Logo" title="Linux Mint" /></li>
+				<li><img src="images/redhat.png" width="125" height="125" alt="Red Hat Logo" title="Red Hat" /></li>
+			</ol>
 		</aside>
+			
 		<section>
 			<h2>Quick Look!</h2>
 			<p>Linux Zone is the #1 community on the web - 100% dedicated to Linux!
@@ -33,31 +48,60 @@
 			in-mail distribution flavors and subscription from our friends at Linux Pro 
 			Magazine, included in the premium membership price.
 			</p>
+			<p>
+			<a href="#" class="myButton">Sign Up!</a>
+			</p>
 			
-			<ul>
-				<li><img src="images/ubuntu.jpg" width="125" height="125" alt="Ubuntu Logo" title="Ubuntu" /></li>
-				<li><img src="images/fedora.jpg" width="125" height="125" alt="Fedora Logo" title="Fedora" /></li>
-				<li><img src="images/mint.jpg" width="125" height="125" alt="Linux Mint Logo" title="Linux Mint" /></li>
-				<li><img src="images/redhat.jpg" width="125" height="125" alt="Red Hat Logo" title="Red Hat" /></li>
-			</ul>
+			
+			
+			
 		</section>
 		
 		<article>
   			<header>
-  				<h1>Site Blog</h1>
-    			<h2>WUBI Dropped in Ubuntu 13.04</h2>
+  				<h1>Latest News</h1>
+    			<h2>Installing Cinnamon Desktop for Ubuntu 12.04</h2>
     			<p>Published by <em>John Keenan</em></p>
   			</header>
-  				<p>The popular Windows program that allowed Microsoft Windows users to 
-  				dual boot their machines to run Linux and Windows on the same machine. Canonical,
-  				the company behind Ubuntu had been wanting to drop support for a while and came
-  				very close to dropping WUBI before releasing version 12.04. Here at Linux Zone
-  				recommend ...  
-  				<a href="">[Read More]</a></p>
+  				<p>
+  				If you use Ubuntu 12.04 and just happen to not like Unity all too much or just feel like having another desktop environment instead, this tutorial is for you!
+
+So first off, we’re going to be installing the latest version of the Cinnamon desktop, which looks fairly similar to the cinnamon desktop Linux Mint 14 uses. There are some slight differences in design, but it all functions the same. I would also like to mention, I’ll be adding some screenshots below and that I’ll be running Ubuntu 12.04 w/ Cinnamon via VirtualBox.
+
+So first we need to open up the Terminal (you can search for it in the Dash Home)
+
+In the terminal, you’ll want to add this line:
+
+sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-stable
+
+What the above is basically going to do is add a repository that has a stable Cinnamon desktop version and give us access to it. However, these repositories usually have lists of different versions, so we need to make sure we’re up to date with our updates to select the most recent stable version of the desktop environment, so we’re just going to update our system first before we do any installing.
+
+In the terminal, you’ll want to add this line:
+
+sudo apt-get update
+
+Depending how long it’s been since you last updated, this can either be very quick or long.
+
+Now it’s time to install the actual software now that we have an updated system and access to the working Cinnamon repository.
+
+In the terminal, you’ll want to add this line:
+
+sudo apt-get install cinnamon
+
+It may ask you Yes or No, you’ll type either Yes or Y, depending on the question, and also may need to type in your password, but after that’s finished, you log out and during the login screen, you’ll see a little Ubuntu logo next to your username. You’ll have to click that to see a menu of different desktop environments to choose.
+
+Desktop Chooser
+
+My menu may be longer than yours, but you’ll want to choose Cinnamon 2D and login.
+
+
+  				</p>
+  				<p><a href="">[Read More]</a></p>
 		</article>
 		
 		<footer>
-			All Rights Reserved. &copy; 2013 Linux Zone.
-		</footer>		
+			<p>All Rights Reserved. &copy; 2013 Linux Zone.</p>
+		</footer>	
+	</div>	
 	</body>
 </html>

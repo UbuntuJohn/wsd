@@ -1,0 +1,257 @@
+body {
+background-color: #FFF;
+background-image: url('../images/bg.jpg');
+background-repeat: repeat-x;
+}
+
+p {
+font-family: 'Khmer OS Classic'; 
+font-weight: normal;
+font-style: normal; 
+line-height: 1.6;
+}
+
+header {
+overflow: hidden;
+background-color: black;
+
+}
+
+header img {
+height: 90px;
+position: absolute;
+}
+
+#wrapper {
+margin-left: auto;
+margin-right: auto;
+width: 960px;
+}
+
+/*--------- slogan -----------*/
+
+#slogan {
+color: #fff;
+margin-top: 12px;
+overflow: hidden;
+margin-left: -20px;
+font-family: 'Teleindicadores 1';
+font-weight: normal;
+font-style: normal; 
+}
+
+section {
+margin-top: 80px;
+width: 520px;
+background: url('../images/look.png') no-repeat;
+box-shadow: 0 0 2px #222;
+padding: 8px;
+text-indent: 20px;
+text-align: left;
+}
+
+section h2 {
+font-family: 'Comfortaa';
+font-weight: normal;
+font-style: normal;
+text-indent: 20px;
+}
+
+article {
+width: 960px;
+margin-top: 60px;
+}
+
+article h1 {
+font-family: 'Comfortaa', arial, sans-serif;
+font-weight: normal;
+font-style: normal;
+background-color: #efa100;
+color: white;
+width: 250px;
+text-align: center;
+padding: 5px;
+
+}
+
+article p {
+-moz-column-count:3; 
+-webkit-column-count:3;
+column-count:3;
+-moz-column-gap:40px; 
+-webkit-column-gap:40px; 
+column-gap:40px;
+column-width:200px;
+-moz-column-width:200px; 
+-webkit-column-width:200px; 
+}
+
+article a {
+color: #D69613;
+}
+
+article header {
+background: none;
+}
+
+article header p {
+margin-top: -20px;
+text-align: left;
+}
+
+/*---------- Navigation Start --------- */
+
+.nav {
+float: right;
+margin-top: 35px;
+}
+
+.nav li{
+display: inline;
+margin-left: 60px;
+overflow: hidden;
+font-family: 'Comfortaa';
+font-weight: normal;
+font-style: normal; 
+text-shadow: 1px 1px 2px #D9D9D9;
+list-style-type:circle;
+
+}
+
+.nav a {
+color: #efa100;
+font-size: 24px;
+text-decoration: none;
+}
+
+.nav a:visited {
+color: #efa100;
+}
+
+.nav a:hover {
+color: #fff;
+
+
+}
+
+/*------side bar with testimonials------ */ 
+
+aside {
+float: right;
+width: 350px;
+color: #333;
+margin-top: 80px;
+
+}
+
+aside p {
+padding: 8px;
+background-color: rgba(235,196,26,0.3);
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-bordr-radius: 8px;
+}
+
+aside h3 {
+font-family: 'Gentium Basic';
+   font-weight: bold;
+   font-style: normal; 
+}
+
+aside p {
+font-family: 'Gentium Basic';
+   font-weight: bold;
+   font-style: normal; 
+}
+
+/* --------- gallery --------- */
+
+#gallery {
+display: inline;
+margin-left: -25px;
+}
+
+#gallery li {
+display: inline;
+}
+
+#gallery li img {
+width: 60px;
+height: 60px;
+opacity: 0.8;
+}
+
+#gallery li img:hover {
+opacity: 1;
+}
+
+
+/*-------- footer ------------ */
+
+footer {
+background-color: #000;
+color: #fff;
+height: 80px;
+border-radius: 6px;
+}
+
+footer p {
+padding: 30px;
+color: #f1b53b;
+}
+
+/* ------ Sign up Button --------------- */
+
+
+    .myButton {
+    
+    	margin-left: 110px;
+        
+        -moz-box-shadow:inset 0px 1px 1px 0px #ffe0b5;
+        -webkit-box-shadow:inset 0px 1px 1px 0px #ffe0b5;
+        box-shadow:inset 0px 1px 1px 0px #ffe0b5;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fbb450), color-stop(1, #f89306));
+        background:-moz-linear-gradient(top, #fbb450 5%, #f89306 100%);
+        background:-webkit-linear-gradient(top, #fbb450 5%, #f89306 100%);
+        background:-o-linear-gradient(top, #fbb450 5%, #f89306 100%);
+        background:-ms-linear-gradient(top, #fbb450 5%, #f89306 100%);
+        background:linear-gradient(to bottom, #fbb450 5%, #f89306 100%);
+        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89306',GradientType=0);
+        */
+        background-color:#fbb450;
+        
+        -moz-border-radius:7px;
+        -webkit-border-radius:7px;
+        border-radius:7px;
+        
+        border:1px solid #c97e1c;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:Trebuchet MS;
+        font-size:28px;
+        font-weight:bold;
+        padding:10px 36px;
+        text-decoration:none;
+        
+        text-shadow:1px 1px 2px #8f7f24;
+        
+    }
+    .myButton:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f89306), color-stop(1, #fbb450));
+        background:-moz-linear-gradient(top, #f89306 5%, #fbb450 100%);
+        background:-webkit-linear-gradient(top, #f89306 5%, #fbb450 100%);
+        background:-o-linear-gradient(top, #f89306 5%, #fbb450 100%);
+        background:-ms-linear-gradient(top, #f89306 5%, #fbb450 100%);
+        background:linear-gradient(to bottom, #f89306 5%, #fbb450 100%);
+        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f89306', endColorstr='#fbb450',GradientType=0);
+        */
+        background-color:#f89306;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+
