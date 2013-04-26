@@ -2,6 +2,8 @@ body {
 background-color: #FFF;
 background-image: url('../images/bg.jpg');
 background-repeat: repeat-x;
+margin:0;
+padding:0;
 }
 
 p {
@@ -9,32 +11,31 @@ font-family: 'Khmer OS Classic', arial, sans-serif;
 font-weight: normal;
 font-style: normal; 
 line-height: 1.6;
+font-size: 1em;
 }
 
 header {
 overflow: hidden;
-background-color: black;
-
 }
 
 header img {
-height: 90px;
+/* 90px images*/
+height: 13%;
 position: absolute;
 }
 
 #wrapper {
 margin-left: auto;
 margin-right: auto;
-width: 960px;
+width: 67.86486%;
 }
 
 /*--------- slogan -----------*/
 
 #slogan {
 color: #fff;
-margin-top: 12px;
-overflow: hidden;
-margin-left: -20px;
+/* 90px */
+margin-top: 9.375%;
 font-family: 'Teleindicadores 1', arial, sans-serif;
 font-weight: normal;
 font-style: normal; 
@@ -42,8 +43,8 @@ font-style: normal;
 
 section {
 margin-top: 80px;
-width: 520px;
-background: url('../images/look.png') no-repeat;
+width: 54.166666666667%;
+background: url('../images/look.png') repeat-x;
 box-shadow: 0 0 2px #222;
 padding: 8px;
 text-indent: 20px;
@@ -58,7 +59,7 @@ text-indent: 20px;
 }
 
 article {
-width: 960px;
+width: 100%;
 margin-top: 60px;
 }
 
@@ -103,7 +104,7 @@ text-align: left;
 
 .nav {
 float: right;
-margin-top: 35px;
+margin-top: -68px;
 }
 
 .nav li{
@@ -138,7 +139,7 @@ color: #fff;
 
 aside {
 float: right;
-width: 350px;
+width: 40.22989%;
 color: #333;
 margin-top: 80px;
 
@@ -168,7 +169,8 @@ font-family: 'Gentium Basic', arial, sans-serif;
 
 #gallery {
 display: inline;
-margin-left: -25px;
+/* -25px */
+margin-left: -8%;
 }
 
 #gallery li {
@@ -196,7 +198,8 @@ border-radius: 6px;
 }
 
 footer p {
-padding: 30px;
+/* 30px */
+padding: 3%;
 color: #f1b53b;
 }
 
@@ -204,8 +207,8 @@ color: #f1b53b;
 
 
     .myButton {
-    
-    	margin-left: 110px;
+    	/* 110px; */
+    	margin-left: 20%;
         
         -moz-box-shadow:inset 0px 1px 1px 0px #ffe0b5;
         -webkit-box-shadow:inset 0px 1px 1px 0px #ffe0b5;
@@ -230,9 +233,9 @@ color: #f1b53b;
         display:inline-block;
         color:#ffffff;
         font-family:Trebuchet MS, arial, sans-serif;
-        font-size:28px;
+        font-size:1.750em;
         font-weight:bold;
-        padding:10px 36px;
+        padding: 3% 4%;
         text-decoration:none;
         
         text-shadow:1px 1px 2px #8f7f24;
@@ -254,4 +257,213 @@ color: #f1b53b;
         position:relative;
         top:1px;
     }
+
+/* media queries */
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	
+	body {
+	background-color: blue;
+	}
+	
+	#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	}
+	
+
+
+.nav a:visited {
+color: #efa100;
+}
+
+.nav a:hover {
+color: #fff;
+}
+
+/*----------- aside -------------*/
+
+
+aside {
+float: right;
+width: 38.22989%;
+color: #333;
+/*80px*/
+margin-top: 8.342022940563%;
+
+}
+
+aside p {
+padding: 8px;
+background-color: rgba(235,196,26,0.3);
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-bordr-radius: 8px;
+}
+
+aside h3 {
+font-family: 'Gentium Basic', arial, sans-serif;
+   font-weight: bold;
+   font-style: normal; 
+}
+
+aside p {
+font-family: 'Gentium Basic', arial, sans-serif;
+   font-weight: bold;
+   font-style: normal; 
+}
+
+
+
+
+
+/* --------- gallery --------- */
+
+#gallery {
+display: inline;
+/* -25px */
+margin-left: -8%;
+}
+
+#gallery li {
+display: inline;
+}
+
+#gallery li img {
+width: 40px;
+height: 40px;
+opacity: 0.8;
+}
+
+#gallery li img:hover {
+opacity: 1;
+}
+
+	
+	
+	
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {
+	background-color: orange;
+	
+	}
+	
+	#wrapper {
+	width: 100%;
+	}
+	
+	#slogan {
+		display: none;
+	}
+	
+	.nav {
+		/*120px*/
+		margin-top: 15.645371577575%;
+		width: 100%;
+		background-color: black;
+		text-align: center;
+		margin: 19.645371577575% 0;
+	}
+	
+	
+aside {
+display: none;
+}
+
+section {
+width: 90%;
+margin-top: -90px;
+}
+
+article h1 {
+padding: 15px;
+}
+
+article p {
+-moz-column-count:1; 
+-webkit-column-count:1;
+column-count:1;
+padding: 15px;
+}
+	
+}
+
+
+@media only screen and (max-width: 479px) {
+	body {
+	background-color: #fff;
+	}
+	
+	#wrapper {
+	width: 68%;
+	}
+	
+	#slogan {
+	display: none;
+	}
+	
+	nav {
+	/*150px*/
+	margin-top: 60%;
+	text-align: left;
+	}
+	
+	nav ul li{
+		width: 100%;
+		font-size: 3em;
+		padding: 7% 0;
+		border-bottom: 1px double #222;
+	}
+	
+	header nav {
+	padding-top: 26.19624217119%;
+	float: right;
+	width: 100%;
+	/* 50px */
+	background-color: black;
+	border-radius: 7px;
+	
+	}
+	
+	aside {
+	display: none;
+	}
+	
+	section {
+	width: 100%;
+	}
+	
+	
+	.myButton {
+	/* 30px */
+	margin-left: 18%;
+	}
+	
+	article {
+		font-size: 1.000em;
+	}
+	
+	footer {
+		font-size: 0.750em;
+		height: 40px;
+		text-align: center;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
