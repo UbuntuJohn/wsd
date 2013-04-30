@@ -126,7 +126,7 @@ font-weight: normal;
 font-style: normal; 
 text-shadow: 1px 1px 2px #D9D9D9;
 list-style-type:circle;
-
+float: left;
 }
 
 .nav a {
@@ -185,6 +185,7 @@ margin-left: -8%;
 
 #gallery li {
 display: inline;
+float: left;
 }
 
 #gallery li img {
@@ -267,6 +268,147 @@ color: #f1b53b;
         position:relative;
         top:1px;
     }
+    
+    
+
+	
+/*---------- week 4 ----------*/	 
+
+	#customer_section {
+	background-color: orange;
+	overflow: auto;
+	text-align: center;
+	border: 3px solid #000;
+	font-family: 'Comfortaa', arial, sans-serif;
+font-weight: normal;
+font-style: normal;
+	}  
+    
+    #contact {
+    	float: right;
+    	padding: 15px;
+    	background-color: #FFDD8C;
+    	border-left: 1px solid #000;
+    }
+    
+    
+    
+    #sign_up {
+    	padding: 10px;
+    	
+    }
+    
+    #sign_up th{
+    	font-size: 1.5em;
+    }
+    
+    #sign_up td {
+    	font-size: 1.1em;
+    }
+    
+    #sign_up img {
+    height: 40px;
+    }
+    
+    .form_data {
+    padding: 5px;
+    }
+    
+    input {
+    height: 32px;
+    width: 200px;
+    font-size: 1.1em;
+    }
+    
+    input:focus {
+    background-color: #F2F2F2;
+    border: 2px solid #000;
+   -moz-box-shadow: inset 0 0 2px 2px #888;
+-webkit-box-shadow: inset 0 0 2px 2px#888;
+box-shadow: inset 0 0 2px 2px #888;
+    }
+    
+   
+    
+    select {
+    height: 32px;
+    font-size: 1.1em;
+    width: 200px;
+    }
+    
+    textarea {
+    width: 200px;
+    height: 150px;
+    }
+    
+    #sign_up h2 { 
+    text-align: left;
+    }
+    
+    #sign_up tr{
+    	width: 300px;
+    }
+    
+    .basic{
+    	background-image: url('../images/basic.png');
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: 55%;
+    	width: 200px;
+    	text-align: center;
+    }
+    
+    .premium {
+    	background-image: url('../images/premium.png');
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: 55%;
+    	width: 100px;
+		text-align: center;
+		font-family: 'Comfortaa', arial, sans-serif;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+	}
+	
+	 .sponsor {
+    	background-image: url('../images/sponsor.png');
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: 55%;
+    	width: 100px;
+		text-align: center;
+		font-family: 'Comfortaa', arial, sans-serif;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+	}
+
+	.price {
+	background-color: #fff;
+	width: 300px;
+	}
+	
+	table {
+		border-collapse: collapse;
+		border: 3px solid black;
+		width: 60%;
+		margin-left: 60px;
+	}
+	
+	th {
+		background-color: #fff;
+		border: 2px solid #000;
+		padding: 5px;
+	}
+	
+    
+    td {
+    	border: 2px solid black;
+    	padding: 0.5em;
+    	background-color: #fff;
+    }
+    
 
 /* media queries */
 
@@ -419,6 +561,31 @@ padding: 1.955671447197%;
 margin-left: 4%;
 margin-right: 4%;
 }
+
+#contact {
+float: left;
+width: 100%;
+}
+
+#contact input {
+width: 400px;
+}
+
+#contact select {
+width: 400px;
+}
+
+#contact textarea {
+width: 400px;
+}
+
+#sign_up{
+display: none;
+}
+
+table  {
+margin: 0;
+}
 	
 }
 
@@ -480,6 +647,14 @@ margin-right: 4%;
 		font-size: 0.750em;
 		height: 40px;
 		text-align: center;
+	}
+	
+	#contact {
+	width: 100%;
+	}
+	
+	#sign_up {
+	display: none;
 	}
 	
 }
